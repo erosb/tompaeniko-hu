@@ -1,4 +1,5 @@
 import '@popperjs/core'
+import 'bootstrap/js/dist/collapse'
 import Popover from 'bootstrap/js/dist/popover'
 
 const popoverTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="popover"]'))
