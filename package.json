@@ -1,0 +1,21 @@
+{
+  "name": "oevk",
+  "version": "1.0.0",
+  "description": "Tompa Enikő - HB 02. OEVK",
+  "author": "GJF",
+  "license": "MIT",
+  "private": true,
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel serve --public-url / --dist-dir dist",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.16.3",
+    "parcel": "2.16.3"
+  },
+  "dependencies": {
+    "@popperjs/core": "2.11.8",
+    "bootstrap": "5.3.8"
+  }
+}
