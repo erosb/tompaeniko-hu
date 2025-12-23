@@ -49,7 +49,7 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: erosb.eu
-          username: tehu
+          username: erosb
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd /tmp
