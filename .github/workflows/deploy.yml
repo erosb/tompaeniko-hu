@@ -43,7 +43,7 @@ jobs:
           username: erosb
           password: ${{ secrets.SSH_PASSWORD }}
           source: "website.zip"
-          target: "/tmp"
+          target: "/home/erosb"
 
       - name: Extract website on server
         uses: appleboy/ssh-action@v1.0.3
@@ -52,7 +52,6 @@ jobs:
           username: erosb
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
-            cd /tmp
-            sudo unzip -o website.zip -d /home/erosb/sites/tompaeniko.hu/public_html
+            cd /home/erosb
+            unzip -o website.zip -d /home/erosb/sites/tompaeniko.hu/public_html
             sudo chown -R www-data:www-data /home/erosb/sites/tompaeniko.hu/public_html
-            rm website.zip
